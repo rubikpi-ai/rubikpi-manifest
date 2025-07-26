@@ -34,7 +34,7 @@
     <linkfile dest="rubikpi_build.sh" src="tools/build_script/common/rubikpi_build.sh"/>
   </project>
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="554fc20c326a9b205169331644f0cb471619e63c" upstream="scarthgap"/>
-  <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="2a9f3af90202e4273a0824f5bf538c1001773d99" upstream="scarthgap"/>
+  <project name="meta-ros" path="layers/meta-ros" remote="ros" revision="c560699e810e60a9526f4226c2c23f8d877280c8" upstream="refs/heads/scarthgap"/>
   <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="hongyang-rp" revision="158dc01d53df3600ab71be81260d5455dce0d66b" upstream="QLI1.4"/>
   <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="582e89422b3efd5a09aba3d584beef4083b70d14" upstream="BP-BINs"/>
   <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="2f417e4593dd04eab44b40a4324d41c4c8e47a49" upstream="chicdk-kt"/>
