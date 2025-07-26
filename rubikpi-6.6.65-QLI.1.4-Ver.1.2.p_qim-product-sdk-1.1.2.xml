@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/qualcomm-linux" name="github" review="github.com"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto" review="git.yoctoproject.org"/>
+  <remote fetch="https://github.com/openembedded" name="oe" review="github.com"/>
+  <remote fetch="https://github.com/Linaro" name="Linaro" review="github.com"/>
+  <remote fetch="https://github.com/uptane" name="updater" review="github.com"/>
+  <remote fetch="https://github.com/ros" name="ros" review="github.com"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5" review="github.com"/>
+  <remote fetch="https://github.com/rubikpi-ai" name="rubikpi" review="github.com"/>
+  <remote fetch="https://github.com/hongyang-rp" name="hongyang-rp" review="github.com"/>
+  <remote fetch="https://git.codelinaro.org" name="codelinaro" review="git.codelinaro.org"/>
+  <default remote="github" revision="refs/heads/scarthgap" sync-j="8"/>
+
+  <project name="meta-qcom" path="layers/meta-qcom" remote="Linaro" revision="ec80a36bce11d8182b4bb2a6fa0359adfeccde0a" upstream="refs/heads/scarthgap"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="c04b722e9b38631e78dc6ca0e03d571e23ed28a2" upstream="refs/heads/scarthgap"/>
+  <project name="poky" path="layers/poky" remote="yocto" revision="2541a8171f91812a4b16e7dc4da0d77d2318a256" upstream="refs/heads/scarthgap"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="bc865c5276c2ab4031229916e8d7c20148dfbac3" upstream="refs/heads/scarthgap"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="450941a1b6df96285691e8c23d4f332d3c88a994" upstream="refs/heads/scarthgap"/>
+  <project name="meta-selinux" path="layers/meta-selinux" remote="yocto" revision="3aff015697fa056b4af83b1c9ba44eca346a8a37" upstream="refs/heads/scarthgap"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="updater" revision="fa550d14caebb16fede2a428ac0db66f2d0f893b" upstream="refs/heads/scarthgap"/>
+  <project name="meta-tensorflow" path="layers/meta-tensorflow" remote="yocto" revision="652aae8b9df359bd6bd5a8f3d178196996570089" upstream="refs/heads/scarthgap"/>
+
+  <project name="meta-qcom-hwe" path="layers/meta-qcom-hwe" revision="4d158b3a553312a95cd31e4ac511bb0dc0b16379" upstream="refs/heads/scarthgap"/>
+  <project name="meta-qcom-distro" path="layers/meta-qcom-distro" revision="13eb357943de721dce7bf51620c7e3f6107a4091" upstream="refs/heads/scarthgap">
+    <linkfile dest="setup-environment" src="set_bb_env.sh"/>
+  </project>
+
+  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="57ce5d52497b2a577e5def99a7dcdf8c39b8dfb0" upstream="main">
+    <linkfile dest="setup-environment_RUBIKPi" src="set_bb_env.sh"/>
+  </project>
+  <project name="meta-rubikpi-extras" path="layers/meta-rubikpi-extras" remote="rubikpi" revision="216bf2c1db1a60b69b6db8b41a0b904b9ae3c014" upstream="main"/>
+  <project name="rubikpi-script" path="rubikpi" remote="rubikpi" revision="4fffa99527f1d9dadc859e731c7e25800ca3a87b" upstream="yocto_kirkstone">
+    <linkfile dest="rubikpi_build.sh" src="tools/build_script/common/rubikpi_build.sh"/>
+  </project>
+  <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="554fc20c326a9b205169331644f0cb471619e63c" upstream="scarthgap"/>
+  <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="hongyang-rp" revision="158dc01d53df3600ab71be81260d5455dce0d66b" upstream="QLI1.4"/>
+  <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="582e89422b3efd5a09aba3d584beef4083b70d14" upstream="BP-BINs"/>
+  <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="2f417e4593dd04eab44b40a4324d41c4c8e47a49" upstream="chicdk-kt"/>
+  <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="f5999b281d9073bba495139c14ceadc18ffa0db2" upstream="main"/>
+  <project name="display-drivers" path="src/vendor/qcom/opensource/kernel-6.6/techpack/display" remote="rubikpi" revision="328043eecba42346eec144ba59c678d664fcf537" upstream="main"/>
+
+  <project name="clo/le/platform/vendor/opensource/camera-kernel" path="src/vendor/qcom/opensource/kernel-6.6/techpack/camera-kernel" remote="codelinaro" revision="0f2b11fac7f13f76a9e9f8e25ae2de5c97b23169" upstream="camera-kernel.qclinux.1.0.r1-rel"/>
+  <project name="meta-qcom-qim-product-sdk" path="layers/meta-qcom-qim-product-sdk" revision="fddf2645eec50640e275a830060c998aee3e196a" upstream="refs/heads/scarthgap"/>
+</manifest>
