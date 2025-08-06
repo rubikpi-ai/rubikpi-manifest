@@ -24,7 +24,7 @@
     <linkfile dest="setup-environment" src="set_bb_env.sh"/>
   </project>
 
-  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="cfc5e14d9b776f1952e7366f6155cb0f740eff10" upstream="main">
+  <project name="meta-rubikpi" path="layers/meta-rubikpi" remote="rubikpi" revision="8a9ac7927f48a5c28a7e052d3ee22fe045f83fd0" upstream="main">
     <linkfile dest="setup-environment_RUBIKPi" src="set_bb_env.sh"/>
   </project>
   <project name="meta-rubikpi-extras" path="layers/meta-rubikpi-extras" remote="rubikpi" revision="216bf2c1db1a60b69b6db8b41a0b904b9ae3c014" upstream="main"/>
