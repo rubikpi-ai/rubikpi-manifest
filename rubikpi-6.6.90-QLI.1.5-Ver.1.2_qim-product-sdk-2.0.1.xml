@@ -34,7 +34,7 @@
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="554fc20c326a9b205169331644f0cb471619e63c" upstream="scarthgap"/>
   <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="75a16b050e861e6bc41bcd5fd1358d2f6ba7f3ce" upstream="main"/>
   <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="582e89422b3efd5a09aba3d584beef4083b70d14" upstream="BP-BINs"/>
-  <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="7b86496fdc00cb2ecb2c05f5c6e7f4a844467bd2" upstream="chicdk-kt"/>
+  <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="520747a14fac565cf4f68208d230eaa2d4496cf4" upstream="chicdk-kt"/>
   <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="f5999b281d9073bba495139c14ceadc18ffa0db2" upstream="main"/>
   <project name="display-drivers" path="src/vendor/qcom/opensource/kernel-6.6/techpack/display" remote="rubikpi" revision="4be60c18a6e6e911e5982bc02d5687e9053de3d8" upstream="main"/>
 
