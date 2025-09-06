@@ -27,14 +27,14 @@
   <project name="meta-rubikpi-distro" path="layers/meta-rubikpi-distro" remote="rubikpi" revision="ad2d822c0b534cb36fba7f7999c424e58f076a36" upstream="main">
     <linkfile dest="setup-environment_RUBIKPi" src="set_bb_env.sh"/>
   </project>
-  <project name="meta-rubikpi-bsp" path="layers/meta-rubikpi-bsp" remote="rubikpi" revision="494c01df5e75ed612b44dea532d24c85249dd5ce" upstream="main"/>
+  <project name="meta-rubikpi-bsp" path="layers/meta-rubikpi-bsp" remote="rubikpi" revision="64ebae75c66f0c1d78170729860a7f47b56141f4" upstream="main"/>
   <project name="meta-rubikpi-extras" path="layers/QCM6490.LE.1.0/meta-rubikpi-extras" remote="rubikpi" revision="fcbf366111313497e67f1b100fe59c0b481f047f" upstream="main"/>
-  <project name="rubikpi-script" path="rubikpi" remote="rubikpi" revision="be7756eb2e64dcfa49f15e2eb1e8e1007aacf31e" upstream="yocto_kirkstone">
+  <project name="rubikpi-script" path="rubikpi" remote="rubikpi" revision="c612e28d4aeb2a66b4c276754e87a43654d7d221" upstream="yocto_kirkstone">
     <linkfile dest="rubikpi_build.sh" src="tools/build_script/common/rubikpi_build.sh"/>
   </project>
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="554fc20c326a9b205169331644f0cb471619e63c" upstream="scarthgap"/>
   <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="d0e1ab48d93af09cfaa557f955ea48b8a74425fc" upstream="main"/>
-  <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="114432981bc7c6d20edccb7e4399364143e43816" upstream="BP-BINs"/>
+  <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="396e4ebf763ce88522f24d2f1746398939fa017f" upstream="BP-BINs"/>
   <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="e8a88c4a896a3c16223ee06efe80d762bf853cb0" upstream="chicdk-kt"/>
   <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="f5999b281d9073bba495139c14ceadc18ffa0db2" upstream="main"/>
   <project name="display-drivers" path="src/vendor/qcom/opensource/kernel-6.6/techpack/display" remote="rubikpi" revision="4be60c18a6e6e911e5982bc02d5687e9053de3d8" upstream="main"/>
