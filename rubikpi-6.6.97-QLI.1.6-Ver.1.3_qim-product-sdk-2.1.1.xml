@@ -27,13 +27,13 @@
   <project name="meta-rubikpi-distro" path="layers/meta-rubikpi-distro" remote="rubikpi" revision="b4fb5aa46e41a5eee8354676e787b1a9abd950df" upstream="main">
     <linkfile dest="setup-environment_RUBIKPi" src="set_bb_env.sh"/>
   </project>
-  <project name="meta-rubikpi-bsp" path="layers/meta-rubikpi-bsp" remote="rubikpi" revision="3c5e390c60f54c76717d7aa942fbc00aa561833c" upstream="main"/>
+  <project name="meta-rubikpi-bsp" path="layers/meta-rubikpi-bsp" remote="rubikpi" revision="227631ce94bbd295b370518e2bd9f86b261d3448" upstream="main"/>
   <project name="meta-rubikpi-extras" path="layers/QCM6490.LE.1.0/meta-rubikpi-extras" remote="rubikpi" revision="fcbf366111313497e67f1b100fe59c0b481f047f" upstream="main"/>
   <project name="rubikpi-script" path="rubikpi" remote="rubikpi" revision="c612e28d4aeb2a66b4c276754e87a43654d7d221" upstream="yocto_kirkstone">
     <linkfile dest="rubikpi_build.sh" src="tools/build_script/common/rubikpi_build.sh"/>
   </project>
   <project name="meta-qt5" path="layers/meta-qt5" remote="meta-qt5" revision="554fc20c326a9b205169331644f0cb471619e63c" upstream="scarthgap"/>
-  <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="67380245223ca38278eb1927472d7f4260fcc269" upstream="main"/>
+  <project name="linux" path="src/vendor/qcom/opensource/kernel-6.6" remote="rubikpi" revision="8c1599030840bcca335c12a08c7485a885345d62" upstream="main"/>
   <project name="prebuilt" path="src/vendor/thundercomm/prebuilt/BP-BINs" remote="rubikpi" revision="f552ed936296cb5d75cd4096abaf50e53e194c67" upstream="BP-BINs"/>
   <project name="prebuilt" path="src/vendor/qcom/proprietary/chi-cdk-kt" remote="rubikpi" revision="d12948170f4ae38afa1128cb97b22913ebce13d0" upstream="chicdk-kt"/>
   <project name="device-tree" path="src/vendor/qcom/opensource/kernel-6.6/arch/arm64/boot/dts/thundercomm" remote="rubikpi" revision="f5999b281d9073bba495139c14ceadc18ffa0db2" upstream="main"/>
